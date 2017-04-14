@@ -31,6 +31,12 @@ def Lists():
     for name in names:
         print(name, end=' ')
     print()
+    print('Input name to check if name is in list')
+    name = input()
+    if name in names:
+        print('names is in list on position:', names.index(name))
+    else:
+        print('name not in list')
 
 
 def FunSelector(text):
@@ -40,6 +46,7 @@ def FunSelector(text):
         Printseperators()
     if text == 'list':
         Lists()
+
 
 while True:
     print('Type printsep to Print seperators samples')
