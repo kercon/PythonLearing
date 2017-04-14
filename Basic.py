@@ -4,6 +4,7 @@ import copy
 from liststuple import *
 from references import *
 from dictionarysamples import *
+from ticTacToe import *
 
 
 def ExitFunction():
@@ -39,6 +40,8 @@ def FunSelector(text):
         dictBasic3()
         dictBasic4()
         dictBasic5()
+    if text == 'tictactoe':
+        ticTacToe()
 
 
 while True:
