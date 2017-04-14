@@ -50,6 +50,8 @@ while True:
     print('Type tuple to Print tuple samples')
     print('Type ref to Print reference samples')
     print('Type copy to Print copy samples')
+    print('Type dict to Print dictionary samples')
+    print('Type tictactoe to play tictactoe sample')
     print('Type exit to exit')
     response = input()
     FunSelector(response)

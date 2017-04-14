@@ -1,9 +1,13 @@
 import copy
 import sys
-ClearBoard = {'top-L': ' ', 'top-M': ' ', 'top-R': ' '}
+import os
+ClearBoard = {}
 
 
 def setClearBoard():
+    ClearBoard.setdefault('top-L', ' ')
+    ClearBoard.setdefault('top-M', ' ')
+    ClearBoard.setdefault('top-R', ' ')
     ClearBoard.setdefault('mid-L', ' ')
     ClearBoard.setdefault('mid-M', ' ')
     ClearBoard.setdefault('mid-R', ' ')
@@ -13,11 +17,12 @@ def setClearBoard():
 
 
 def printboard(board):
+    print()
     print(board['top-L'], board['top-M'], board['top-R'], sep='|')
     print('-', '-', '-', sep='+')
     print(board['mid-L'], board['mid-M'], board['mid-R'], sep='|')
     print('-', '-', '-', sep='+')
-    print(board['low-L'], board['low-M'], board['low-R'], sep='|')
+    print(board['low-L'], board['low-M'], board['low-R'], sep='|', end='\n\n')
 
 
 def checkwin(board, turn):
@@ -50,8 +55,9 @@ def checkwin(board, turn):
 
 
 def ticTacToe():
+    os.system('cls')
     print('Welcome to Tic Tac Toe')
-    print('Input Exit to Quit or Reset to start new game')
+    print('Input Exit to Quit or Reset to start new game', end='\n')
     setClearBoard()
     while True:
         gameboard = copy.copy(ClearBoard)
@@ -90,3 +96,4 @@ def ticTacToe():
         command = input()
         if command == 'Exit':
             break
+        os.system('cls')
