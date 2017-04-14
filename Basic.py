@@ -1,10 +1,12 @@
 import random
 import sys
 import copy
+import os
 from liststuple import *
 from references import *
 from dictionarysamples import *
 from ticTacToe import *
+from regex import *
 
 
 def ExitFunction():
@@ -43,6 +45,8 @@ def FunSelector(text):
         dictBasic5()
     if text == 'tictactoe':
         ticTacToe()
+    if text == 'regex':
+        print(phonesearch('My number is 415-555-4242.').group())
 
 
 while True:
@@ -55,4 +59,5 @@ while True:
     print('Type tictactoe to play tictactoe sample')
     print('Type exit to exit')
     response = input()
+    os.system('cls')
     FunSelector(response)
