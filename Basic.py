@@ -3,6 +3,7 @@ import sys
 import copy
 from liststuple import *
 from references import *
+from dictionarysamples import *
 
 
 def ExitFunction():
@@ -32,6 +33,12 @@ def FunSelector(text):
         refernce()
     if text == 'copy':
         copysample()
+    if text == 'dict':
+        dictBasic1()
+        dictBasic2()
+        dictBasic3()
+        dictBasic4()
+        dictBasic5()
 
 
 while True:
