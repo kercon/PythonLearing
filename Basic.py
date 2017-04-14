@@ -1,7 +1,7 @@
 import random
 import sys
 import copy
-from Liststuple import *
+from liststuple import *
 from references import *
 
 
