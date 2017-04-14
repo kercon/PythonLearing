@@ -77,11 +77,11 @@ def ticTacToe():
                 command = input()
                 if ' ' == gameboard.get(command, '-'):
                     correctcommand = True
-                if command == 'Exit':
+                if command.lower() == 'exit':
                     sys.exit()
-                if command == 'Reset':
+                if command.lower() == 'reset':
                     break
-            if command == 'Reset':
+            if command.lower() == 'reset':
                 break
             gameboard[command] = turn
             if checkwin(gameboard, turn):

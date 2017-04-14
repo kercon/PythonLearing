@@ -22,6 +22,7 @@ def Printseperators():
 
 
 def FunSelector(text):
+    text = text.lower()
     if text == 'exit':
         ExitFunction()
     if text == 'printsep':
