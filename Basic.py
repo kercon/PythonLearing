@@ -59,6 +59,7 @@ def FunSelector(text):
         directory()
         makedirectory()
         getfiles()
+        getfilestree()
 
 
 while True:

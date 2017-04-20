@@ -1,4 +1,5 @@
 import os
+import codecs
 
 
 def directory():
@@ -20,4 +21,20 @@ def getfiles():
                 print(n+'\\'+m)
                 savefile.write('\t'+n+'\\'+m+'\n')
     savefile.close()
+
+
+def getfilestree():
+    savefile = codecs.open('.\\test\\file2.txt', 'w', 'utf-8')
+    path = 'E:\\Anime'
+    for folderName, subfolders, filenames in os.walk(path):
+        savefile.write(str(folderName) + '\n')
+        print(folderName)
+        # for subfolder in subfolders:
+        # savefile.write(str(subfolder) + '\n')
+        # print(subfolder)
+        for filename in filenames:
+            # print(filename)
+            savefile.write('\t' + str(filename) + '\n')
+    savefile.close()
+
 
