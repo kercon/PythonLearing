@@ -1,13 +1,14 @@
-import random
-import sys
 import copy
 import os
+import random
+import sys
+
+from dictionarysamples import *
+from files import *
 from liststuple import *
 from references import *
-from dictionarysamples import *
-from ticTacToe import *
 from regex import *
-from files import *
+from ticTacToe import *
 
 
 def ExitFunction():

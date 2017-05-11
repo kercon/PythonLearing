@@ -1,6 +1,7 @@
 import copy
-import sys
 import os
+import sys
+
 ClearBoard = {}
 
 

@@ -1,5 +1,5 @@
-import os
 import codecs
+import os
 
 
 def directory():
@@ -36,5 +36,3 @@ def getfilestree():
             # print(filename)
             savefile.write('\t' + str(filename) + '\n')
     savefile.close()
-
-
